@@ -214,5 +214,19 @@ module.exports = {
 	ShotgunApiClient,
 };
 
-// Apply mixins
-requireAll({ dirname: `${__dirname}/client` });
+// Apply mixins (Modified for webpack)
+require('./client/entity-batch')
+require('./client/entity-create')
+require('./client/entity-delete')
+require('./client/entity-item-upload')
+require('./client/entity-read-all')
+require('./client/entity-read')
+require('./client/entity-revive')
+require('./client/entity-search')
+require('./client/entity-update')
+require('./client/preferences-get')
+require('./client/schema-field-create')
+require('./client/schema-field-delete')
+require('./client/schema-field-revive')
+require('./client/schema-field-update')
+require('./client/schema-get')
